@@ -7,7 +7,7 @@
 .COPYRIGHT 
 .TAGS AdobeReader Intune PowerShell FTP
 .LICENSEURI 
-.PROJECTURI https://github.com/SCConfigMgr/Intune/blob/master/Other/Get-LatestAdobeReaderInstaller.ps1
+.PROJECTURI https://github.com/SCConfigMgr/Other/blob/master/Get-LatestAdobeReaderInstaller.ps1
 .ICONURI 
 .EXTERNALMODULEDEPENDENCIES 
 .REQUIREDSCRIPTS 
