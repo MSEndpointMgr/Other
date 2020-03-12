@@ -29,7 +29,10 @@
 
 .EXAMPLE
     # Retrieve the latest available Adobe Reader DC setup installer of type 'EXE' from the official Adobe FTP server:
-    .\Get-LatestAdobeReaderInstaller.ps1 -Type EXE
+    .\Get-LatestAdobeReaderInstaller.ps1 -Type EXE -Language en_US
+
+    # Retrieve the latest available Adobe Reader DC patch installer of type 'MSP' from the official Adobe FTP server:
+    .\Get-LatestAdobeReaderInstaller.ps1 -Type MSP
 
 .NOTES
     FileName:    Get-LatestAdobeReaderInstaller.ps1
