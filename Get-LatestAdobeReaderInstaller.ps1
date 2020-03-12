@@ -1,11 +1,11 @@
 <#PSScriptInfo
-.VERSION 1.1.0
-.GUID 0390e63a-8d73-4371-bcb1-84520605782e
+.VERSION 1.0.0
+.GUID e4d9eb84-bf65-4985-a5b4-9bcbe20afb05
 .AUTHOR NickolajA
 .DESCRIPTION Get the latest Adobe Reader DC setup installation details from the official Adobe FTP server
 .COMPANYNAME SCConfigMgr
 .COPYRIGHT 
-.TAGS AdobeReader Intune PowerShell FTP
+.TAGS AdobeReader Intune ConfigMgr PowerShell FTP
 .LICENSEURI 
 .PROJECTURI https://github.com/SCConfigMgr/Other/blob/master/Get-LatestAdobeReaderInstaller.ps1
 .ICONURI 
