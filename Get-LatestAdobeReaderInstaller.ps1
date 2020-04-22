@@ -1,5 +1,5 @@
 <#PSScriptInfo
-.VERSION 1.0.0
+.VERSION 1.0.2
 .GUID e4d9eb84-bf65-4985-a5b4-9bcbe20afb05
 .AUTHOR NickolajA
 .DESCRIPTION Get the latest Adobe Reader DC setup installation details from the official Adobe FTP server
@@ -39,10 +39,12 @@
     Author:      Nickolaj Andersen
     Contact:     @NickolajA
     Created:     2020-03-12
-    Updated:     2020-03-12
+    Updated:     2020-04-22
     
     Version history:
     1.0.0 - (2020-03-12) Script created.
+    1.0.1 - (2020-04-22) Fixed an issue where the SetupVersion was not interpretet correctly.
+    1.0.2 - (2020-04-22) This time, it should work.
 #>
 [CmdletBinding(SupportsShouldProcess = $true)]
 param(
@@ -154,7 +156,7 @@ Process {
                     foreach ($FTPSetupInstallerItem in $FTPSetupInstaller) {
                         $PSObject = [PSCustomObject]@{
                             FileName = $FTPSetupInstallerItem.Name
-                            SetupVersion = -join@($FTPDirectoryItem.Name.SubString(0, 2), ".", $FTPDirectoryItem.Name.SubString(2, 3), ".", $FTPDirectoryItem.Name.SubString(4, 5))
+                            SetupVersion = -join@($FTPDirectoryItem.Name.SubString(0, 2), ".", $FTPDirectoryItem.Name.SubString(2, 3), ".", $FTPDirectoryItem.Name.SubString(5, 5))
                             URL = $FTPSetupInstallerItem.Path
                             Date = $FTPSetupInstallerItem.Date
                         }
